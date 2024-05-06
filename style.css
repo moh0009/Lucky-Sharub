@@ -49,6 +49,10 @@ li{
 a:hover{
     font-size: 30px;
     color: #f3dab3;
+    animation: a 1s ease-in-out;
+}
+a:not(:hover){
+    animation: not 1s ease-in-out;
 }
 
 a{
@@ -94,6 +98,7 @@ article{
     border-radius: 50px;
     background-color: #f3dab3;
     box-shadow: #353535 5px 5px 5px;
+    
 }
 #content > article{
     outline: #C3B091 3px solid;
@@ -123,4 +128,22 @@ p{
 
 div > p{
     color: white;
+}
+
+@keyframes a {
+    from {
+        font-size: 25px;
+    }
+    to{
+        font-size: 30px;
+    }
+}
+
+@keyframes not {
+    from {
+        font-size: 30px;
+    }
+    to{
+        font-size: 25px;
+    }
 }
