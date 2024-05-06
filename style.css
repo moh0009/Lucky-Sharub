@@ -1,0 +1,9 @@
+@font-face {
+    font-family: minecraft;
+    src: url("assets/Minecraft.ttf") format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
